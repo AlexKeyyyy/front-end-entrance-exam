@@ -10,7 +10,7 @@
   font-weight: 500;
   display: flex;
   justify-content: space-between;
-  font-size: 14px;
+  font-size: 18px;
   line-height: 20px;
   color: #6c757d;
 }
@@ -29,7 +29,7 @@
 }
 
 .experience-block__name {
-  font-size: 10px;
+  font-size: 16px;
   line-height: 24px;
   font-weight: 700;
   color: #343a40;
@@ -67,7 +67,7 @@ ul {
   display: flex;
   flex-direction: column;
   gap: 10px;
-  font-size: 10px;
+  font-size: 14px;
   line-height: 20px;
   color: #495057;
 }
@@ -92,7 +92,7 @@ ul {
   border-radius: 59px;
   padding: 2px 6px;
   font-weight: 400;
-  font-size: 8px;
+  font-size: 10px;
   line-height: 12.4px;
   display: flex;
   align-items: center;
@@ -187,6 +187,7 @@ div {
   object-fit: contain;
   display: block;
   margin: 0 auto;
+  border-radius: 5px;
 }
 
 .skills-block__title {
@@ -198,7 +199,7 @@ div {
   background-color: var(--background-color-black);
   border-radius: 59px;
   width: max-content;
-  font-size: 8px;
+  font-size: 10px;
   line-height: 20px;
   font-weight: 400;
   color: #ffffff;

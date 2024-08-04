@@ -2,8 +2,12 @@
   padding: 8px;
 }
 
-.education-date {
+.education-institution {
   font-size: 10px;
+}
+
+.education-date {
+  font-size: 16px;
   line-height: 15px;
   font-weight: 700;
   padding-bottom: 8px;
@@ -17,13 +21,14 @@
 }
 
 .education-title {
-  font-size: 10px;
+  font-size: 16px;
   line-height: 15px;
-  font-weight: 500;
+  font-weight: 700;
 }
 
 .education-tags {
   color: var(--green-color);
+  font-size: 12px;
 }
 
 .education-card {
@@ -57,7 +62,7 @@
 
 .interest-item {
   background-color: var(--background-color-white);
-  font-size: 10px;
+  font-size: 12px;
   line-height: 15px;
   padding: 4px 10px;
   border-radius: 40px;
@@ -77,7 +82,7 @@
 .contact-email {
   color: var(--link-color);
   text-decoration: none;
-  font-size: 10px;
+  font-size: 12px;
   line-height: 15px;
 }
 
@@ -147,13 +152,21 @@
   }
 }
 
-@media (min-width: 1024px) {
-  .interest-item,
-  .education-date {
-    font-size: 12px;
+@media (max-width: 760px) {
+  .main-container,
+  .section-layout {
+    padding: 0 10px;
   }
 
-  .contact-email a {
-    font-size: 12px;
+  .section-layout {
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "education"
+      "interests"
+      "contact";
+  }
+
+  .education-cards {
+    grid-template-columns: 1fr;
   }
 }
