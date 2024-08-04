@@ -16,7 +16,7 @@ document.addEventListener("DOMContentLoaded", () => {
 document.getElementById("downloadPDF").addEventListener("click", function () {
   var element = document.body;
   html2pdf(element, {
-    margin: 0.5,
+    margin: [10, 10, 10, 10], // Параметры отступов в мм (по желанию можно изменить)
     filename: "CV_Alex_Koba.pdf",
     image: { type: "jpeg", quality: 0.98 },
     html2canvas: { scale: 2, logging: true, dpi: 192, letterRendering: true },
