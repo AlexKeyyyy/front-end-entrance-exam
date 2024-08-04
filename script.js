@@ -13,13 +13,42 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 });
 
-document.getElementById("downloadPDF").addEventListener("click", function () {
-  var element = document.body;
-  html2pdf(element, {
-    margin: 0.5,
-    filename: "CV_Alex_Koba.pdf",
-    image: { type: "jpeg", quality: 0.98 },
-    html2canvas: { scale: 2, logging: true, dpi: 192, letterRendering: true },
-    jsPDF: { unit: "in", format: "letter", orientation: "landscape" },
+document
+  .getElementById("downloadPDF")
+  .addEventListener("click", async function () {
+    const { jsPDF } = window.jspdf;
+
+    // Создайте новый экземпляр jsPDF
+    const doc = new jsPDF();
+
+    // Получите первую секцию
+    const section1 = document.getElementById("section1");
+    const section2 = document.getElementById("section2");
+    const section3 = document.getElementById("section3");
+
+    // Функция для добавления секции в PDF
+    const addSectionToPDF = async (element) => {
+      return new Promise((resolve) => {
+        html2canvas(element, { scale: 2 }).then((canvas) => {
+          const imgData = canvas.toDataURL("image/jpeg");
+          doc.addImage(imgData, "JPEG", 0, 0);
+          doc.addPage();
+          resolve();
+        });
+      });
+    };
+
+    // Добавляем первую и вторую секции на одну страницу
+    await addSectionToPDF(section1);
+    await addSectionToPDF(section2);
+
+    // Удаляем последнюю пустую страницу
+    doc.deletePage(doc.internal.getNumberOfPages());
+
+    // Добавляем третью секцию на новую страницу
+    doc.addPage();
+    await addSectionToPDF(section3);
+
+    // Сохраняем PDF
+    doc.save("CV_Alex_Koba.pdf");
   });
-});
