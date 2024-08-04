@@ -37,8 +37,8 @@
 }
 
 ul {
-  padding-left: 20px; /* Increased padding to prevent bullets from going out of bounds */
-  word-break: break-word; /* Ensures long words break and do not overflow */
+  padding-left: 20px;
+  word-break: break-word;
 }
 
 .experience-block__time {
