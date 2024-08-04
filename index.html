@@ -1,13 +1,396 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vite App</title>
+    <title>CV</title>
+    <!-- Preconnect to Google Fonts for faster loading -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Main stylesheet -->
+    <link rel="stylesheet" href="./css/index.css" />
   </head>
   <body>
-    <div id="app"></div>
-    <script type="module" src="./js/main.js"></script>
+    <section>
+      <div class="main-container">
+        <div class="profile-section">
+          <div class="avatar">
+            <img src="profile.JPG" alt="profile image" />
+          </div>
+          <div class="intro-section">
+            <div class="text-wrapper">
+              <div class="intro-greeting" contenteditable data-attr="greeting">
+                Hello 👋🏻 I’m
+              </div>
+              <h1 class="intro-name" contenteditable data-attr="name">
+                Alex Koba
+              </h1>
+              <div class="intro-job" contenteditable data-attr="job">
+                UX/UI Designer
+              </div>
+            </div>
+          </div>
+          <div class="skills-section">
+            <div class="text-wrapper">
+              <h2>Languages</h2>
+              <div class="skills-list">
+                <div class="skills-item">
+                  <div
+                    id="language-english"
+                    class="skills-name"
+                    contenteditable
+                    data-attr="english"
+                  >
+                    Russian
+                  </div>
+                  <div class="skills-progress"></div>
+                </div>
+                <div class="skills-item">
+                  <div
+                    id="language-malayalam"
+                    class="skills-name"
+                    contenteditable
+                    data-attr="malayalam"
+                  >
+                    English
+                  </div>
+                  <div class="skills-progress" style="width: 60%"></div>
+                </div>
+                <div class="skills-item">
+                  <div
+                    id="language-hindi"
+                    class="skills-name"
+                    contenteditable
+                    data-attr="hindi"
+                  >
+                    German
+                  </div>
+                  <div class="skills-progress" style="width: 25%"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="main-container">
+        <div class="second-section">
+          <div class="experience-block">
+            <h2 contenteditable class="ripple">Experience</h2>
+            <div class="experience-block__info">
+              <div class="experience-block__item">
+                <div class="experience-block__date">
+                  <div contenteditable class="rippleGreen">
+                    Jun. 2023 - Present
+                  </div>
+                  <div
+                    class="experience-block__most rippleGreen"
+                    contenteditable
+                  >
+                    most recent
+                  </div>
+                </div>
+                <div class="experience-block__descriptions">
+                  <div class="experience-block__names">
+                    <div
+                      class="experience-block__name rippleGreen"
+                      contenteditable
+                    >
+                      Marketing Manager
+                    </div>
+                    <div class="experience-block__time">
+                      <div
+                        class="experience-block__time-item rippleGreen"
+                        contenteditable
+                      >
+                        Pankayam
+                      </div>
+                      <div
+                        class="experience-block__time-item rippleGreen"
+                        contenteditable
+                      >
+                        Full-time
+                      </div>
+                    </div>
+                  </div>
+                  <div class="experience-block__description">
+                    <ul contenteditable class="rippleGreen">
+                      <li>
+                        Strategy development and planning of campaigns that
+                        promote the business and generate genuine traffic
+                      </li>
+                      <li>
+                        SEO Content Creation for Blogs, Website, Social media
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="experience-block__item">
+                <div class="experience-block__date ripple" contenteditable>
+                  2017 - Present
+                </div>
+                <div class="experience-block__descriptions">
+                  <div class="experience-block__names">
+                    <div class="experience-block__name ripple" contenteditable>
+                      Graphic / Web designer
+                    </div>
+                    <div class="experience-block__time">
+                      <div
+                        class="experience-block__time-item ripple"
+                        contenteditable
+                      >
+                        Freelance
+                      </div>
+                    </div>
+                  </div>
+                  <div
+                    class="experience-block__description ripple"
+                    contenteditable
+                  >
+                    <ul>
+                      <li>
+                        Development of internal projects from scratch, product
+                        design of brands
+                      </li>
+                      <li>Landing page, webapps and hybrid apps</li>
+                      <li>
+                        Coordinating with outside agencies, art services, web
+                        designer, marketing, printers, and colleagues as
+                        necessary.
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="experience-block__item">
+                <div class="experience-block__date ripple" contenteditable>
+                  Sep. 2021 - Jun. 2023
+                </div>
+                <div class="experience-block__descriptions">
+                  <div class="experience-block__names">
+                    <div class="experience-block__name ripple" contenteditable>
+                      Legal Assistant
+                    </div>
+                    <div class="experience-block__time">
+                      <div
+                        class="experience-block__time-item ripple"
+                        contenteditable
+                      >
+                        Law Firm
+                      </div>
+                      <div
+                        class="experience-block__time-item ripple"
+                        contenteditable
+                      >
+                        Intern
+                      </div>
+                    </div>
+                  </div>
+                  <div class="experience-block__description ripple">
+                    <ul contenteditable>
+                      <li>
+                        Provide administrative support to lawyer and enhance
+                        office effectiveness
+                      </li>
+                      <li>Handle communication with clients, witnesses etc.</li>
+                      <li>
+                        repare case briefs and summarize depositions,
+                        interrogatories and testimony
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="tools-block">
+            <h2 class="ripple" contenteditable>Tools</h2>
+
+            <div class="skills-block">
+              <div class="skills-block__design-block">
+                <div class="skills-block__title rippleBlack" contenteditable>
+                  design
+                </div>
+                <img src="./src/icons/logoFigma.svg" alt="figma" />
+                <img src="./src/icons/logoPhotoshop.svg" alt="Photoshop" />
+                <img
+                  src="./src/icons/logoAdobeIllustrator.svg"
+                  alt="Illustrator"
+                />
+                <img src="./src/icons/logoPremiere.svg" alt="Premiere" />
+                <img src="./src/icons/logoNotion.svg" alt="Notion" />
+                <img src="./src/icons/logoMeet.svg" alt="google meet" />
+              </div>
+              <div class="skills-block__no-code-block">
+                <div class="skills-block__title rippleBlack" contenteditable>
+                  no-code
+                </div>
+                <img src="./src/icons/logoZapier.svg" alt="Zapìer" />
+                <img src="./src/icons/logoWebflow.svg" alt="Webflow" />
+                <img src="./src/icons/logoFramer.svg" alt="Framer" />
+                <img src="./src/icons/logoWordpress.svg" alt="Wordpress" />
+              </div>
+              <div class="skills-block__artoficial-intelligence">
+                <div class="skills-block__title rippleBlack" contenteditable>
+                  artoficial intelligence
+                </div>
+                <img src="./src/icons/logoChatGPT.svg" alt="ChatGPT" />
+                <img src="./src/icons/logoCopilot.svg" alt="Copilot" />
+                <img src="./src/icons/logoMidjourney.svg" alt="Midjourney" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="main-container">
+        <div class="section-layout">
+          <div class="content-block education-section wrapperr">
+            <div class="section-header">
+              <h2 contenteditable class="ripple ripple--default">Education</h2>
+            </div>
+            <div class="education-cards">
+              <div class="education-card">
+                <div
+                  class="education-date rippleGreen ripple--default"
+                  contenteditable
+                >
+                  2023
+                  <img
+                    loading="lazy"
+                    src="./src/icons/logoFavorite.svg"
+                    alt="Favorites"
+                  />
+                </div>
+                <div class="education-description">
+                  <div
+                    class="education-title rippleGreen ripple--default"
+                    contenteditable
+                  >
+                    UI/UX
+                  </div>
+                  <div
+                    class="education-tags rippleGreen ripple--default"
+                    contenteditable
+                  >
+                    #UX #UI #research #DesignSystem #Ui #wireframing #figma #Ux
+                  </div>
+                </div>
+                <div
+                  class="education-institution rippleGreen ripple--default"
+                  contenteditable
+                >
+                  Coursera
+                </div>
+              </div>
+              <div class="education-card">
+                <div
+                  class="education-date ripple ripple--default"
+                  contenteditable
+                >
+                  2017 - 2022
+                </div>
+                <div class="education-description">
+                  <div
+                    class="education-title ripple ripple--default"
+                    contenteditable
+                  >
+                    Law
+                  </div>
+                  <div
+                    class="education-tags ripple ripple--default"
+                    contenteditable
+                  >
+                    #law #legalStudies #contracts #internationalLaws
+                  </div>
+                </div>
+                <div
+                  class="education-institution ripple ripple--default"
+                  contenteditable
+                >
+                  University of Kerala
+                </div>
+              </div>
+              <div class="education-card">
+                <div
+                  class="education-date ripple ripple--default"
+                  contenteditable
+                >
+                  2017
+                </div>
+                <div class="education-description">
+                  <div
+                    class="education-title ripple ripple--default"
+                    contenteditable
+                  >
+                    Graphic Design
+                  </div>
+                  <div
+                    class="education-tags ripple ripple--default"
+                    contenteditable
+                  >
+                    #branding #web #illustration #adobe
+                  </div>
+                </div>
+                <div
+                  class="education-institution ripple ripple--default"
+                  contenteditable
+                >
+                  Coursera
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="content-block interests-section">
+            <div class="section-header">
+              <h2 contenteditable>Interests</h2>
+            </div>
+            <div class="interest-items">
+              <div class="interest-item" contenteditable>branding</div>
+              <div class="interest-item" contenteditable>design</div>
+              <div class="interest-item" contenteditable>photography</div>
+              <div class="interest-item" contenteditable>
+                artificial intelligence
+              </div>
+              <div class="interest-item" contenteditable>illustration</div>
+              <div class="interest-item" contenteditable>typography</div>
+              <div class="interest-item" contenteditable>social networks</div>
+              <div class="interest-item" contenteditable>research</div>
+              <div class="interest-item" contenteditable>drone pilot</div>
+              <div class="interest-item" contenteditable>games</div>
+            </div>
+          </div>
+          <div class="content-block contact-section">
+            <h2 contenteditable>
+              Let's chat! I'm ready to work on exciting projects
+            </h2>
+            <div class="contact-content">
+              <a
+                class="contact-email"
+                href="mailto:srkarthik.designscape@gmail.com"
+                contenteditable
+              >
+                srkarthik.designscape@gmail.com
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div>
+      <button id="download-btn">Download PDF</button>
+    </div>
+    <script src="script.js"></script>
   </body>
 </html>
