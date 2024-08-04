@@ -1,0 +1,159 @@
+.education-card {
+  padding: 8px;
+}
+
+.education-date {
+  font-size: 10px;
+  line-height: 15px;
+  font-weight: 700;
+  padding-bottom: 8px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.education-date img {
+  width: 11px;
+  height: 11px;
+}
+
+.education-title {
+  font-size: 10px;
+  line-height: 15px;
+  font-weight: 500;
+}
+
+.education-tags {
+  color: var(--green-color);
+}
+
+.education-card {
+  display: flex;
+  gap: 8px;
+  flex-direction: column;
+  background-color: var(--background-color-white);
+  border-radius: 10px;
+  align-self: flex-start;
+}
+
+.education-cards {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 12px 16px;
+  padding-top: 12px;
+}
+
+.education-cards .education-card:first-child {
+  background-color: var(--background-color-green);
+  color: black;
+}
+
+.education-cards .education-card:first-child .education-tags {
+  color: var(--light-green-color);
+}
+
+.interest-items {
+  padding-top: 16px;
+}
+
+.interest-item {
+  background-color: var(--background-color-white);
+  font-size: 10px;
+  line-height: 15px;
+  padding: 4px 10px;
+  border-radius: 40px;
+}
+
+.interest-items {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.contact-section h2 {
+  color: black;
+  line-height: 1.4;
+}
+
+.contact-email {
+  color: var(--link-color);
+  text-decoration: none;
+  font-size: 10px;
+  line-height: 15px;
+}
+
+.education-section {
+  grid-area: education;
+  background-color: #f0f0f0;
+  border-radius: 15px;
+  padding: 20px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.interests-section {
+  grid-area: interests;
+  background-color: #f0f0f0;
+  border-radius: 15px;
+  padding: 20px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.contact-section {
+  grid-area: contact;
+  background-color: #f0f0f0;
+  border-radius: 15px;
+  padding: 20px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.section-layout {
+  display: grid;
+  gap: 20px;
+  grid-template-columns: 1fr;
+  grid-template-areas:
+    "education"
+    "interests"
+    "contact";
+}
+
+.contact-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  flex-grow: 1;
+  margin-top: auto;
+}
+
+@media (min-width: 414px) {
+  .section-layout {
+    grid-template-areas:
+      "education education"
+      "interests contact";
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .education-cards {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (min-width: 534px) {
+  .section-layout {
+    grid-template-areas:
+      "education interests"
+      "education contact";
+  }
+}
+
+@media (min-width: 1024px) {
+  .interest-item,
+  .education-date {
+    font-size: 12px;
+  }
+
+  .contact-email a {
+    font-size: 12px;
+  }
+}
