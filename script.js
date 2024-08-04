@@ -19,7 +19,7 @@ document.getElementById("downloadPDF").addEventListener("click", function () {
     margin: 0,
     filename: "CV_Alex_Koba.pdf",
     image: { type: "jpeg", quality: 0.98 },
-    html2canvas: { scale: 2, logging: true, dpi: 192, letterRendering: true },
+    html2canvas: { scale: 1, logging: true, dpi: 192, letterRendering: true },
     jsPDF: { unit: "in", format: "letter", orientation: "portrait" },
   });
 });
