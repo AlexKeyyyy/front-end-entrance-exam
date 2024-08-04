@@ -171,3 +171,7 @@
     grid-template-columns: 1fr;
   }
 }
+
+.page-break {
+  page-break-before: always;
+}
